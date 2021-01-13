@@ -1,1 +1,1 @@
-#Mini Projects made using JavaScript
+# Mini Projects made using JavaScript
