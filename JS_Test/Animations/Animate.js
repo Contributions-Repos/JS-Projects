@@ -1,9 +1,9 @@
-//Count down the counter
-const counterElement = document.getElementById("counter");
-
-const decreaseCounter = () => {
-  const counter = Number(counterElement.textContent);
-  counterElement.textContent = counter - 1;
+const animate = () => {
+  // Animation code
+  // ...
+  // At end of animation, request another one
+  animationId = requestAnimationFrame(animate);
 };
 
-setInterval(decreaseCounter, 1000);
+// Animation start
+let animationId = requestAnimationFrame(animate);
