@@ -54,4 +54,20 @@ document.getElementById("password").addEventListener("input", (e) => {
     passwordLength = "moderate";
     messageColor = "orange";
   }
+
+  const passwordHelpElement = document.getElementById("passwordHelp");
+  passwordHelpElement.textContent = `Length: ${passwordLength}`; //Helper text
+  passwordHelpElement.style.color = messageColor; //Helper text color
+});
+
+//Checking an Email Id once it's entered
+
+const emailElement = document.getElementById("emailAddress");
+emailElement.addEventListener("blur", (e) => {
+  let emailAddressValidity = "";
+  if (e.target.value.indexOf("@") === -1 || !e.target.value.endsWith(".com")) {
+    // the email address doesn't contain @
+    emailAddressValidity = "Invalid Address";
+  }
+  document.getElementById("emailHelp").textContent = emailAddressValidity;
 });
