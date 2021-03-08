@@ -5,21 +5,19 @@
 #block {
   width: 20px;
   height: 40px;
-  background: red;
+  background: green;
   position: relative;
-  margin-left: -20px; /* Negative margin to simplify position calculations */
-  animation-name: moveBlock; /* Name of animation */
-  animation-duration: 6s; /* Length of animation */
-  animation-fill-mode: forwards; /* Let the block in its final position */
+  margin-left: -20px; /*Negative margin to simplify position calculations*/
+  animation-name: moveBlock;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes moveBlock {
   from {
-    /* Initial position: to the left of the frame (taking negative margin into account) */
     left: 20px;
   }
   to {
-    /* Final position: within the right side of the frame (taking negative margin into account) */
     left: 100%;
   }
 }
