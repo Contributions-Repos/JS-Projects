@@ -20,7 +20,7 @@ let intervalId;
 //Starting the Timer
 const start = document.getElementById("start");
 start.addEventListener("click", () => {
-  intervalId = setInterval(startTimer, 1000);
+  intervalId = setInterval(startTimer, 10);
 });
 
 //Stoping the Timer
